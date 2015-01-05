@@ -1,0 +1,37 @@
+{
+  "ProjectName": "Friends App",
+  "ProjectGuid": "3db07c63-0ea0-4dcf-82c7-e61800fffb90",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.FriendsApp",
+  "DisplayName": "Friends App",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{5487f8e1-6906-4f74-b70a-22129eefe7c9}",
+  "WP8ProductID": "{37e4e543-2b7b-43ba-883d-7eb5b4c8b1ab}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
