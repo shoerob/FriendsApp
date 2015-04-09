@@ -69,7 +69,7 @@ spec(function() {
 			'default': [
                 // inline query example
 				web.getHtml({ className: 'km-view-title'}, function(result) {
-					assert(result.trim()).equals('Not-Activities');
+					assert(result.trim()).equals('Activities');
 				}),
 			]
 		}
