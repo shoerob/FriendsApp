@@ -5,7 +5,7 @@
   "AppIdentifier": "com.telerik.FriendsApp",
   "DisplayName": "Friends App",
   "Author": "",
-  "Description": "",
+  "Description": "Friends App",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -33,5 +33,7 @@
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.telerik.FriendsApp"
 }

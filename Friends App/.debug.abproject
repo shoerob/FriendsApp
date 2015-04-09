@@ -1,5 +1,7 @@
 {
   "CorePlugins": [
+    "com.telerik.mobiletesting",
+    "com.telerik.plugin.eqatecanalytics",
     "org.apache.cordova.battery-status",
     "org.apache.cordova.camera",
     "org.apache.cordova.console",
@@ -18,12 +20,7 @@
     "org.apache.cordova.network-information",
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar",
-    "org.apache.cordova.vibration",
-    "com.telerik.mobiletesting"
+    "org.apache.cordova.vibration"
   ],
-  "CordovaPluginVariables": {
-    "com.telerik.mobiletesting": {
-      "IOS_APP_URL": "friends"
-    }
-  }
+  "CordovaPluginVariables": {}
 }
