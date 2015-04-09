@@ -88,7 +88,7 @@ spec(function() {
         test("Not-Activities screen should display on login", function() {
 			step('Given Friends is running');
 			step('And is logged in');
-			step('Then the Activities screen should be displayed');
+			step('Then the Not-Activities screen should be displayed');
 		});
 	}, stepRepository);
 });
