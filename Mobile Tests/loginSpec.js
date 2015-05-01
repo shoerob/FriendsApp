@@ -25,12 +25,16 @@ spec(function() {
 		login: {
 			usernameField: { id: 'loginUsername' },
 			passwordField: { id: 'loginPassword' },
-			loginButton: { id: 'login' }
+			loginButton: { id: 'login' },
+			loginButtonText: [{ id: 'login' }, { className: 'km-text' }]
             // tagName: {tagName: "button", index: 1},
 			// id: {id: "submit", index: 0},
 			// name: {name: "submitButton", index: 0},
 			// className: {className: "submitButton", index: 0},
 			// chained: [{tagName: "fieldset", index: 3}, {className: "submitButton", index: 0}]
+		},
+		activities: {
+			logoutButton: [{ id: 'view-all-activities'}, { className: 'km-leftitem' }, { className: 'nav-button' }]
 		}
 	};
 
@@ -65,6 +69,19 @@ spec(function() {
 					assert(result.trim()).equals('Activities');
 				}),
 			]
+		},
+		'Then the login screen should be displayed': {
+			'default': [
+				web.getHtml(queries.login.loginButtonText, function(result) {
+					assert(result.trim()).equals('Login');
+				})
+			]
+		},
+		'And logout is tapped': {
+			'default': [
+				web.tap(queries.activities.logoutButton),
+				web.wait(2000)
+			]
 		}
 	};
 
@@ -72,11 +89,20 @@ spec(function() {
 	 * Tests
 	 * These are the tests that will be performed against the application.
 	 */
-	describe("Verify activities user interface works as expected", function() {
+	describe("Verify login functionality works as expected", function() {
+		// Login test
 		test("Activities screen should display on login", function() {
 			step('Given Friends is running');
 			step('And is logged in');
 			step('Then the Activities screen should be displayed');
 		});
+
+		// Logout test
+		test("Logout returns to login screen", function() {
+			step("Given Friends is running");
+			step('And is logged in');
+			step('And logout is tapped');
+			step('Then the login screen should be displayed');
+		});		
 	}, stepRepository);
 });
