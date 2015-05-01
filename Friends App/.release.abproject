@@ -21,5 +21,9 @@
     "org.apache.cordova.statusbar",
     "org.apache.cordova.vibration"
   ],
-  "CordovaPluginVariables": {}
+  "CordovaPluginVariables": {
+    "com.telerik.mobiletesting": {
+      "IOS_APP_URL": "friends"
+    }
+  }
 }

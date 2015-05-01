@@ -11,7 +11,7 @@ spec(function() {
 		IOS_URL: 'friends://',
 
 		// NOTE: Update this to the Android package name of the Friends App
-		ANDROID_PACKAGE: 'com.telerik.FriendsApp',
+		ANDROID_PACKAGE: 'com.telerik.Friends',
 
 		// NOTE: Update this to the wp8 URI of thr Friends App
 		WP8_URI: 'friends'
@@ -26,7 +26,7 @@ spec(function() {
 			usernameField: { id: 'loginUsername' },
 			passwordField: { id: 'loginPassword' },
 			loginButton: { id: 'login' }
-            // tagName: {tagName: "button", index: 0},
+            // tagName: {tagName: "button", index: 1},
 			// id: {id: "submit", index: 0},
 			// name: {name: "submitButton", index: 0},
 			// className: {className: "submitButton", index: 0},
@@ -59,17 +59,10 @@ spec(function() {
 		},
 		'Then the Activities screen should be displayed' : {
 			'default': [
+				web.wait(3000),
                 // inline query example
 				web.getHtml({ className: 'km-view-title'}, function(result) {
 					assert(result.trim()).equals('Activities');
-				}),
-			]
-		},
-        'Then the Not-Activities screen should be displayed' : {
-			'default': [
-                // inline query example
-				web.getHtml({ className: 'km-view-title'}, function(result) {
-					assert(result.trim()).equals('Not-Activities');
 				}),
 			]
 		}
@@ -85,11 +78,5 @@ spec(function() {
 			step('And is logged in');
 			step('Then the Activities screen should be displayed');
 		});
-        test("Not-Activities screen should display on login", function() {
-			step('Given Friends is running');
-			step('And is logged in');
-			step('Then the Activities screen should be displayed');
-		});
 	}, stepRepository);
 });
-
